@@ -42,6 +42,26 @@ const handleUserInput = function(key) {
     connection.write("Move: right");
 
   }
+  if (key === '\u0064') { //d
+    // conn.write("Move: up");
+    console.log("d is pressed for right");
+    connection.write("Move: right");
+
+  }
+  if (key === '\u0071') { //q
+    // conn.write("Move: up");
+    console.log("q is pressed for taunting");
+    // "Say: _____"
+    connection.write("Say: I'M FINALLY MOVING!!!");
+
+
+  }
+  if (key === '\u0065') { //e
+    // conn.write("Move: up");
+    connection.write("Say: WEEEEEEEEEEEEEE!!!");
+    // "Say: _____"
+
+  }
 };
 
 
