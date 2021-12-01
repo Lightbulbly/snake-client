@@ -17,7 +17,34 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write("Name: NNO");
+    // Send the string "Move: up" as data to the server via the conn object.
+    
+    // let moveUp = setInterval(()=>{
+    //   conn.write("Move: up");
+    // }, 500);
+
+    // setTimeout(()=>{
+    //   clearInterval(moveUp);
+    //   let moveRight = setInterval(()=>{
+    //     conn.write("Move: right");
+    //   },500);
+    // }, 5000);
+
+
+
+    // setInterval(()=>{
+    //   conn.write("Move: right");
+    // }, 200);
+    // setInterval(()=>{
+    //   conn.write("Move: down");
+    // }, 800);
+    // setInterval(()=>{
+    //   conn.write("Move: left");
+    // }, 1600);
+
   });
+
+  
 
 
   conn.on("data", data => {
