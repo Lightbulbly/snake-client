@@ -8,7 +8,7 @@ connect();
 
 
 
-setupInput();
+setupInput(connect());
 
 // Connection information:
 // IP: 165.227.47.243
